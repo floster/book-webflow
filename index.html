@@ -6,15 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Main - Book Webflow</title>
 </head>
 
 <body>
-    <div class="section">
-        <div class="section__inner" style="min-height: 70vh;"></div>
-    </div>
+    <header class="header section">
+        <div class="section__inner">
+            <a href="/" class="logo">
+                <svg class="logo__icon" width="25" height="28" aria-hidden="true">
+                    <use href="./assets/sprite.svg#logo" />
+                </svg>
+                <span class="logo__text">Pages</span>
+            </a>
+            <div class="socials">
+                <a href="/" class="socials__button">
+                    <svg width="10" height="19" aria-hidden="true">
+                        <use href="./assets/sprite.svg#facebook" />
+                    </svg>
+                </a>
+                <a href="/" class="socials__button">
+                    <svg width="16" height="19" aria-hidden="true">
+                        <use href="./assets/sprite.svg#twitter" />
+                    </svg>
+                </a>
+                <a href="/" class="socials__button">
+                    <svg width="14" height="19" aria-hidden="true">
+                        <use href="./assets/sprite.svg#linkedin" />
+                    </svg>
+                </a>
+            </div>
+            <div class="header__navigation">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link" href="/">Home</a></li>
+                        <li class="navigation__item has-submenu">
+                            <a class="navigation__link" href="/">
+                                Pages
+                                <svg class="navigation__icon" width="16" height="16" aria-hidden="true">
+                                    <use class="navigation__link" href="./assets/sprite.svg#chevron-down" />
+                                </svg>
+                            </a>
+                            <div class="navigation__submenu">
+                                <a href="/">submenu item #1</a>
+                                <a href="/">submenu item #2</a>
+                                <a href="/">submenu item #3</a>
+                                <a href="/">submenu item #4</a>
+                            </div>
+                        </li>
+                        <li class="navigation__item"><a class="navigation__link" href="/">About</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="/">Services</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="/">Contact</a></li>
+                    </ul>
+                </nav>
+                <a class="cart" href="/" data-count="24">
+                    <svg class="cart__icon" width="22" height="21" aria-hidden="true">
+                        <use href="./assets/sprite.svg#cart" />
+                    </svg>
+                </a>
+                <button class="button" type="button">Order Today</button>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>

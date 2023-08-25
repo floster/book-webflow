@@ -1,0 +1,17 @@
+.header {
+    background-color: var(--color-primary);
+    padding: 40px 0;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-left: auto;
+}
+
+.header .section__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}

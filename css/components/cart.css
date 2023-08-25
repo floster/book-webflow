@@ -1,0 +1,21 @@
+.cart {
+    display: flex;
+    text-decoration: none;
+    color: var(--color-white);
+
+    &:after {
+        content: attr(data-count);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 21px;
+        height: 21px;
+        margin-top: -12px;
+        margin-left: -10px;
+        border-radius: 50%;
+        background-color: var(--color-secondary);
+        font-size: 10px;
+        font-weight: bold;
+        color: var(--color-primary);
+    }
+}
