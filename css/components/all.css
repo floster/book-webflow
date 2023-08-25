@@ -1,6 +1,9 @@
+@import './button.css';
 @import './header.css';
 @import './logo.css';
 @import './socials.css';
 @import './navigation.css';
 @import './cart.css';
-@import './button.css';
+@import './hero.css';
+@import './hero-book.css';
+@import './statistic.css';

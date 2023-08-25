@@ -1,6 +1,6 @@
 .section__inner {
     width: 100%;
-    max-width: calc(var(--page-max-width) + 2rem);
+    max-width: var(--page-max-width);
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: auto;

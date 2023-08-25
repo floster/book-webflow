@@ -1,0 +1,39 @@
+.statistic {
+    display: flex;
+    align-items: start;
+    column-gap: 80px;
+}
+
+.statistic__item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: relative;
+    padding-left: 28px;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 12px;
+        left: 0;
+        background-color: var(--color-secondary);
+        display: block;
+        width: 1em;
+        height: 1rem;
+        border-radius: 50%;
+    }
+}
+
+.statistic__title {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.statistic__value {
+    font-size: 18px;
+    color: var(--color-text-tint-light);
+}
