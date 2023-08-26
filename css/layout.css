@@ -1,8 +1,33 @@
-.section__inner {
+.section {
     width: 100%;
     max-width: var(--page-max-width);
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+.page-section {
+    padding-top: 145px;
+    padding-bottom: 145px;
+}
+
+.section-title {
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    &::after {
+        content: '';
+        width: 55px;
+        height: 2px;
+        background-color: var(--color-secondary);
+    }
+
+    &.m-left {
+        text-align: left;
+        align-items: flex-start;
+    }
 }
