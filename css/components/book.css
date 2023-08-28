@@ -1,0 +1,37 @@
+.book {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    flex-basis: 50%;
+}
+
+.book__picture {
+    flex-basis: 48%;
+    flex-shrink: 0;
+}
+
+.book__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.book__title {
+    margin-bottom: 1rem;
+}
+
+.book__description {
+    font-size: 19px;
+    color: var(--color-text-tint-dark);
+}
+
+.book__statistic {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.books {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}

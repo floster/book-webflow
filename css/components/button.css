@@ -21,6 +21,14 @@
         padding: 0 96px;
     }
 
+    &.button--secondary {
+        background-color: white;
+
+        &:hover {
+            background-color: var(--color-secondary);
+        }
+    }
+
     &.button--link {
         padding: 2px 3px;
         width: fit-content;

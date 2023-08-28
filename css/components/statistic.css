@@ -2,6 +2,20 @@
     display: flex;
     align-items: start;
     column-gap: 80px;
+
+    &.statistic--dark {
+        .statistic__title {
+            color: var(--color-primary);
+        }
+
+        .statistic__value {
+            color: var(--color-text-tint-dark);
+        }
+    }
+
+    &.statistic--gap-sm {
+        column-gap: 46px;
+    }
 }
 
 .statistic__item {
@@ -34,6 +48,7 @@
 }
 
 .statistic__value {
+    white-space: nowrap;
     font-size: 18px;
     color: var(--color-text-tint-light);
 }

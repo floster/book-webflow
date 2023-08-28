@@ -19,7 +19,7 @@
 
 <body>
     <header class="header">
-        <div class="section">
+        <div class="section header__inner">
             <a href="/" class="logo">
                 <svg class="logo__icon" width="25" height="28" aria-hidden="true">
                     <use href="./assets/sprite.svg#logo" />
@@ -103,8 +103,8 @@
                     </ul>
                 </div>
                 <picture class="hero-book__picture">
-                    <source srcset="./assets/the_dark_light_cover.webp" type="image/webp">
-                    <img src="./assets/the_dark_light_cover.png" alt="Book" class="hero-book__image">
+                    <source srcset="./assets/the_dark_light_cover_lg.webp" type="image/webp">
+                    <img src="./assets/the_dark_light_cover_lg.png" alt="Book" class="hero-book__image">
                 </picture>
             </article>
         </section>
@@ -112,6 +112,52 @@
     <div class="books-included">
         <section class="section page-section">
             <h2 class="section-title h3">Author’s Book Includes</h2>
+            <div class="books">
+                <article class="book">
+                    <picture class="book__picture">
+                        <source srcset="./assets/atomic_ones_cover.webp" type="image/webp">
+                        <img src="./assets/atomic_ones_cover.png" alt="Book" class="hero-book__image">
+                    </picture>
+                    <div class="book__content">
+                        <h3 class="book__title h4">Atomic One’s</h3>
+                        <p class="book__description">Many variations of passages of Lorem Ipsum willing araise
+                            alteration in some form.</p>
+                        <ul class="book__statistic statistic statistic--dark statistic--gap-sm">
+                            <li class="statistic__item">
+                                <strong class="statistic__title">Pages:</strong>
+                                <span class="statistic__value">586 pages</span>
+                            </li>
+                            <li class="statistic__item">
+                                <strong class="statistic__title">Length:</strong>
+                                <span class="statistic__value">10 hours</span>
+                            </li>
+                        </ul>
+                        <button class="button button--secondary" type="button">Order Today</button>
+                    </div>
+                </article>
+                <article class="book">
+                    <picture class="book__picture">
+                        <source srcset="./assets/the_dark_light_cover.webp" type="image/webp">
+                        <img src="./assets/the_dark_light_cover.png" alt="Book" class="hero-book__image">
+                    </picture>
+                    <div class="book__content">
+                        <h3 class="book__title h4">The Dark Light</h3>
+                        <p class="book__description">There are many variations of passages of Lorem Ipsum available,
+                            but the majority.</p>
+                        <ul class="book__statistic statistic statistic--dark statistic--gap-sm">
+                            <li class="statistic__item">
+                                <strong class="statistic__title">Pages:</strong>
+                                <span class="statistic__value">586 pages</span>
+                            </li>
+                            <li class="statistic__item">
+                                <strong class="statistic__title">Length:</strong>
+                                <span class="statistic__value">10 hours</span>
+                            </li>
+                        </ul>
+                        <button class="button button--secondary" type="button">Order Today</button>
+                    </div>
+                </article>
+            </div>
         </section>
     </div>
 </body>

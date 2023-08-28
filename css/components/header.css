@@ -3,6 +3,12 @@
     padding: 40px 0;
 }
 
+.header__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
 .header__navigation {
     display: flex;
     align-items: center;
