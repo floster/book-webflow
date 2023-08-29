@@ -1,0 +1,30 @@
+.trusted {}
+
+.trusted__list {
+    display: flex;
+    column-gap: 96px;
+    margin-top: 40px;
+}
+
+.trusted__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.trusted__logo {
+    height: 90px;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.trusted__title {
+    margin-bottom: 10px;
+}
+
+.trusted__description {
+    font-size: 18px;
+    color: var(--color-text-tint-dark);
+    text-align: center;
+}
