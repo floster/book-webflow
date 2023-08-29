@@ -27,7 +27,7 @@
         background-color: var(--color-secondary);
     }
 
-    &.m-left {
+    &.section-title--left {
         text-align: left;
         align-items: flex-start;
     }

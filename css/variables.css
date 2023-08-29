@@ -1,7 +1,8 @@
 :root {
     --color-primary: #1b3764;
     --color-secondary: #ffca42;
-    --color-light: #f6f8fc;
+    --color-light: hsl(220, 50%, 98%);
+    --color-light-alt: #F4F8FF;
     --color-white: #fff;
 
     --color-text-tint-dark: #969aa0;
