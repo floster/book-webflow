@@ -1,0 +1,39 @@
+.what-learn__inner {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap-96);
+}
+
+.what-learn__tiles,
+.what-learn__picture {
+    flex-grow: 0;
+    flex-basis: 47%;
+}
+
+.what-learn__tiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--gap-32);
+    flex-basis: 53%;
+}
+
+.what-learn__tile {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-32);
+    background-color: var(--color-light-alt);
+    font-family: var(--font-serif);
+    font-size: var(--font-24);
+    padding: var(--gap-32);
+}
+
+.what-learn__tile-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+}
