@@ -1,0 +1,78 @@
+:root {
+    --font-10: 0.625rem;
+    --font-18: 1.125rem;
+    --font-20: 1.25rem;
+    --font-24: 1.5rem;
+    --font-28: 1.75rem;
+    --font-32: 2rem;
+    --font-44: 2.75rem;
+    --font-56: 3.5rem;
+    --font-64: 4rem;
+    --line-height-170: 1.7;
+    --line-height-130: 1.3;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6 .h6 {
+    font-family: var(--font-serif);
+    font-weight: bold;
+    line-height: var(--line-height-130);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.h1,
+h1 {
+    font-size: var(--font-64);
+}
+
+.h2,
+h2 {
+    font-size: var(--font-56);
+}
+
+.h3,
+h3 {
+    font-size: var(--font-44);
+}
+
+.h4,
+h4 {
+    font-size: var(--font-32);
+}
+
+.h5,
+h5 {
+    font-size: var(--font-24);
+}
+
+.h6,
+h6 {
+    font-size: var(--font-20);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.paragraph {
+    color: var(--color-text-tint-dark);
+
+    &.paragraph--light {
+        color: var(--color-text-tint-light);
+    }
+
+    &.paragraph--center {
+        text-align: center;
+    }
+}

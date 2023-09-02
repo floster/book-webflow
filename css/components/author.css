@@ -8,11 +8,6 @@
     flex-grow: 0;
 }
 
-.author__description {
-    font-size: 19px;
-    color: var(--color-text-tint-dark);
-}
-
 .author__statistic,
 .author__contact {
     margin-top: var(--gap-40);

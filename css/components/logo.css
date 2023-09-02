@@ -10,8 +10,8 @@
 }
 
 .logo__text {
-    font-size: 28px;
-    line-height: 1.3;
+    font-size: var(--font-28);
+    line-height: var(--line-height-130);
     font-weight: bold;
     color: var(--color-white);
 }

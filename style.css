@@ -1,4 +1,5 @@
 @import './css/variables.css';
-@import './css/general.css';
 @import './css/layout.css';
+@import './css/typography.css';
+@import './css/general.css';
 @import './css/components/all.css';
