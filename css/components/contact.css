@@ -3,7 +3,7 @@
     background-color: var(--color-primary);
     display: inline-flex;
     align-items: center;
-    column-gap: 36px;
+    column-gap: var(--gap-32);
     width: fit-content;
 }
 
@@ -15,7 +15,7 @@
 .contact__content {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: var(--gap-8);
 }
 
 .contact__title {

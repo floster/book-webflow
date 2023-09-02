@@ -1,23 +1,23 @@
 .header {
     background-color: var(--color-primary);
-    padding: 40px 0;
+    padding: var(--gap-40) 0;
 }
 
 .header__inner {
     display: flex;
     align-items: center;
-    column-gap: 32px;
+    column-gap: var(--gap-32);
 }
 
 .header__navigation {
     display: flex;
     align-items: center;
-    column-gap: 30px;
+    column-gap: var(--gap-32);
     margin-left: auto;
 }
 
 .header .section__inner {
     display: flex;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: var(--gap-32);
 }

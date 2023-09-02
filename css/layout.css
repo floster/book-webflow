@@ -1,33 +1,23 @@
+:root {
+    --gap-4: .25rem;
+    --gap-8: .5rem;
+    --gap-12: .75rem;
+    --gap-16: 1rem;
+    --gap-24: 1.5rem;
+    --gap-32: 2rem;
+    --gap-40: 2.5rem;
+    --gap-48: 3rem;
+    --gap-60: 3.75rem;
+    --gap-80: 5rem;
+    --gap-96: 6rem;
+    --gap-144: 9rem;
+}
+
 .section {
     width: 100%;
     max-width: var(--page-max-width);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: var(--gap-16);
+    padding-right: var(--gap-16);
     margin-left: auto;
     margin-right: auto;
-}
-
-.page-section {
-    padding-top: 145px;
-    padding-bottom: 145px;
-}
-
-.section-title {
-    line-height: 1.2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-
-    &::after {
-        content: '';
-        width: 55px;
-        height: 2px;
-        background-color: var(--color-secondary);
-    }
-
-    &.section-title--left {
-        text-align: left;
-        align-items: flex-start;
-    }
 }

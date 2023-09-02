@@ -1,7 +1,7 @@
 .socials {
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    column-gap: var(--gap-12);
 }
 
 .socials__button {

@@ -1,7 +1,7 @@
 .book {
     display: flex;
     align-items: center;
-    column-gap: 40px;
+    column-gap: var(--gap-40);
     flex-basis: 50%;
 }
 
@@ -20,20 +20,15 @@
     margin-bottom: 1rem;
 }
 
-.book__description {
-    font-size: 19px;
-    color: var(--color-text-tint-dark);
-}
-
 .book__statistic {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: var(--gap-32);
+    margin-bottom: var(--gap-32);
 }
 
 .books {
     display: flex;
     align-items: flex-start;
-    gap: 60px;
+    gap: var(--gap-60);
 
-    margin-top: 60px;
+    margin-top: var(--gap-60);
 }

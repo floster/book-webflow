@@ -60,6 +60,20 @@ p {
     margin-bottom: 0;
 }
 
+.paragraph {
+    color: var(--color-text-tint-dark);
+    font-size: 19px;
+    margin-bottom: 32px;
+
+    &.paragraph--light {
+        color: var(--color-text-tint-light);
+    }
+
+    &.paragraph--center {
+        text-align: center;
+    }
+}
+
 ul {
     list-style-type: none;
     padding: 0;

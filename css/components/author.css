@@ -2,20 +2,10 @@
     background-color: var(--color-light-alt);
 }
 
-.author__inner {
-    display: flex;
-    align-items: center;
-    column-gap: 140px;
-}
-
 .author__picture,
 .author__content {
     flex-basis: 50%;
     flex-grow: 0;
-}
-
-.author__title {
-    margin-bottom: 20px;
 }
 
 .author__description {
@@ -25,5 +15,5 @@
 
 .author__statistic,
 .author__contact {
-    margin-top: 40px;
+    margin-top: var(--gap-40);
 }

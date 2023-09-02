@@ -1,7 +1,7 @@
 .statistic {
     display: flex;
     align-items: start;
-    column-gap: 80px;
+    column-gap: var(--gap-80);
 
     &.statistic--dark {
         .statistic__title {
@@ -14,23 +14,23 @@
     }
 
     &.statistic--gap-sm {
-        column-gap: 46px;
+        column-gap: var(--gap-40);
     }
 }
 
 .statistic__item {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: var(--gap-4);
     position: relative;
-    padding-left: 28px;
+    padding-left: var(--gap-24);
     z-index: 1;
 
     &::before {
         content: "";
         position: absolute;
         z-index: 1;
-        top: 12px;
+        top: var(--gap-12);
         left: 0;
         background-color: var(--color-secondary);
         display: block;
@@ -60,8 +60,8 @@
         padding-left: 0;
 
         &+& {
-            padding-left: 32px;
-            margin-left: 32px;
+            padding-left: var(--gap-32);
+            margin-left: var(--gap-32);
             border-left: 1px solid var(--color-secondary);
         }
 
