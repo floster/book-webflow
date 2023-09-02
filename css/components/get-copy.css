@@ -1,0 +1,22 @@
+.get-copy {
+    background-color: var(--color-primary);
+}
+
+.get-copy__inner {
+    display: flex;
+    align-items: center;
+}
+
+.get-copy__picture,
+.get-copy__content {
+    flex-basis: 50%;
+}
+
+.get-copy__title {
+    color: var(--color-white);
+    margin-bottom: var(--gap-24);
+}
+
+.get-copy__description {
+    margin-bottom: var(--gap-32);
+}
