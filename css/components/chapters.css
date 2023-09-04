@@ -1,0 +1,29 @@
+.chapters {
+    background-color: var(--color-light-alt);
+}
+
+.chapters__tiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--gap-40);
+}
+
+.chapters__tile {
+    display: flex;
+    flex-direction: column;
+    padding: var(--gap-40) var(--gap-48);
+    row-gap: var(--gap-16);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.chapters__footer {
+    margin-top: var(--gap-80);
+    justify-self: center;
+    text-align: center;
+}
+
+.chapters__button {
+    margin-bottom: var(--gap-32);
+}

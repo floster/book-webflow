@@ -1,0 +1,13 @@
+.testimonials__testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-32);
+}
+
+.testimonials__title {
+    margin-bottom: var(--gap-32);
+}
+
+.testimonials__rating {
+    margin-top: var(--gap-40);
+}

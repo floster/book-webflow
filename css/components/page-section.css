@@ -6,6 +6,10 @@
     align-items: center;
     padding-top: var(--gap-144);
     padding-bottom: var(--gap-144);
+
+    &.page-section--1_2 {
+        grid-template-columns: 1fr 2fr;
+    }
 }
 
 .page-section--vertical {

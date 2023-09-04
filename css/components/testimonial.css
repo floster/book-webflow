@@ -1,0 +1,39 @@
+.testimonial {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    padding: var(--gap-32) var(--gap-40);
+    color: var(--color-white);
+
+    &:nth-child(2n) {
+        transform: translateY(60%);
+    }
+}
+
+.testimonial__header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 85px 1fr;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-areas: "avatar username" "avatar rating";
+    column-gap: var(--gap-16);
+
+    margin-bottom: var(--gap-24);
+}
+
+.testimonial__avatar {
+    grid-area: avatar;
+}
+
+.testimonial__username {
+    grid-area: username;
+    line-height: var(--line-height-130);
+}
+
+.testimonial__rating {
+    grid-area: rating;
+}
+
+.testimonial__title {
+    margin-bottom: var(--gap-12);
+}
