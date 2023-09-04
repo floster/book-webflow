@@ -77,6 +77,27 @@ p {
     }
 }
 
+.link {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.link--alt {
+    text-decoration: underline;
+
+    &:hover {
+        color: var(--color-secondary);
+    }
+}
+
 .link--dark {
     color: var(--color-primary);
+}
+
+.link--serif {
+    font-family: var(--font-serif);
 }

@@ -1,0 +1,33 @@
+.article {
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.article__content {
+    display: flex;
+    flex-direction: column;
+    padding: var(--gap-32);
+}
+
+.article__title {
+    margin-bottom: var(--gap-12);
+}
+
+.article__footer {
+    display: flex;
+    align-items: center;
+    margin-top: var(--gap-32);
+
+    .article__link {
+        margin-right: auto;
+    }
+}
+
+.article__author {
+    &+.article__date {
+        &::before {
+            content: '-';
+            margin: 0 var(--gap-12);
+        }
+    }
+}

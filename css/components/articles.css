@@ -1,0 +1,9 @@
+.articles {
+    background-color: var(--color-light-alt);
+}
+
+.articles__articles {
+    display: grid;
+    gap: var(--gap-32);
+    grid-template-columns: repeat(3, 1fr);
+}
