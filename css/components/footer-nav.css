@@ -1,0 +1,27 @@
+.footer-nav {
+    display: flex;
+    column-gap: var(--gap-60);
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-4);
+}
+
+.footer-nav__item {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap-16);
+
+    &::before {
+        content: '○ ○ ○';
+        font-size: var(--font-10);
+        color: var(--color-secondary);
+    }
+}
+
+.footer-nav__title {
+    color: var(--color-white);
+    margin-bottom: var(--gap-24);
+}

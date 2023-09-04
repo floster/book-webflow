@@ -102,6 +102,14 @@ p {
     color: var(--color-primary);
 }
 
+.link--light {
+    color: var(--color-text-tint-light);
+}
+
+.link--white {
+    color: var(--color-white);
+}
+
 .link--serif {
     font-family: var(--font-serif);
 }

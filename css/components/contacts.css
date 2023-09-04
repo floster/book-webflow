@@ -1,0 +1,18 @@
+.contacts__item {
+    display: flex;
+    column-gap: var(--gap-12);
+
+    &+.contacts__item {
+        margin-top: var(--gap-16);
+    }
+}
+
+.contacts__title {
+    font-family: var(--font-serif);
+    color: var(--color-white);
+    min-width: 80px;
+}
+
+.contacts__value {
+    color: var(--color-text-tint-light);
+}
