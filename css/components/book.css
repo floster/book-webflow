@@ -24,11 +24,3 @@
     margin-top: var(--gap-32);
     margin-bottom: var(--gap-32);
 }
-
-.books {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--gap-60);
-
-    margin-top: var(--gap-60);
-}

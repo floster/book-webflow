@@ -2,4 +2,5 @@
 @import './css/layout.css';
 @import './css/typography.css';
 @import './css/general.css';
+@import './css/blocks/all.css';
 @import './css/components/all.css';

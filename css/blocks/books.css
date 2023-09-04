@@ -1,0 +1,7 @@
+.books {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--gap-60);
+
+    margin-top: var(--gap-60);
+}
