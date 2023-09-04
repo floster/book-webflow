@@ -1,0 +1,26 @@
+.subscribe__inner {
+    background-color: var(--color-secondary);
+    padding: var(--gap-120) var(--gap-240);
+    text-align: center;
+}
+
+.subscribe__paragraph {
+    margin: var(--gap-24) auto 0;
+    text-align: center;
+    max-width: 75%;
+}
+
+.subscribe__form {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap-12);
+    margin-top: var(--gap-40);
+
+    .input {
+        flex-grow: 1;
+    }
+
+    .button {
+        flex-basis: 300px;
+    }
+}

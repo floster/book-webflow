@@ -72,6 +72,10 @@ p {
         color: var(--color-text-tint-light);
     }
 
+    &.paragraph--dark {
+        color: var(--color-primary);
+    }
+
     &.paragraph--center {
         text-align: center;
     }

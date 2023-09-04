@@ -21,6 +21,17 @@
         padding: 0 var(--gap-96);
     }
 
+    &.button--primary {
+        color: var(--color-white);
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+
+        &:hover {
+            background-color: var(--color-white);
+            color: var(--color-primary);
+        }
+    }
+
     &.button--secondary {
         background-color: white;
 

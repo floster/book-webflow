@@ -47,6 +47,12 @@
         align-items: center;
     }
 
+    &.page-section__title--alt {
+        &::after {
+            background-color: var(--color-primary);
+        }
+    }
+
     &.page-section__title--light {
         color: var(--color-white);
     }

@@ -10,7 +10,9 @@
     --gap-60: 3.75rem;
     --gap-80: 5rem;
     --gap-96: 6rem;
+    --gap-120: 7.5rem;
     --gap-144: 9rem;
+    --gap-240: 15rem;
 }
 
 .section {
