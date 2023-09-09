@@ -1,4 +1,10 @@
 .hero {
     background-color: var(--color-primary);
     padding: var(--gap-48) 0 var(--gap-96);
+
+    &.hero--simple {
+        .paragraph {
+            max-width: 50%;
+        }
+    }
 }

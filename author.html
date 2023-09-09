@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,700;1,400&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Main - Book Webflow</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="section header__inner">
+            <a href="/" class="logo">
+                <svg class="logo__icon" width="25" height="28" aria-hidden="true">
+                    <use href="./assets/sprite.svg#logo" />
+                </svg>
+                <span class="logo__text">Pages</span>
+            </a>
+            <div class="socials">
+                <a href="/" class="socials__button">
+                    <svg width="10" height="19" aria-hidden="true">
+                        <use href="./assets/sprite.svg#facebook" />
+                    </svg>
+                </a>
+                <a href="/" class="socials__button">
+                    <svg width="16" height="19" aria-hidden="true">
+                        <use href="./assets/sprite.svg#twitter" />
+                    </svg>
+                </a>
+                <a href="/" class="socials__button">
+                    <svg width="14" height="19" aria-hidden="true">
+                        <use href="./assets/sprite.svg#linkedin" />
+                    </svg>
+                </a>
+            </div>
+            <div class="header__navigation">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link" href="/">Home</a></li>
+                        <li class="navigation__item has-submenu">
+                            <a class="navigation__link" href="/">
+                                Pages
+                                <svg class="navigation__icon" width="16" height="16" aria-hidden="true">
+                                    <use class="navigation__link" href="./assets/sprite.svg#chevron-down" />
+                                </svg>
+                            </a>
+                            <div class="navigation__submenu">
+                                <a href="/">submenu item #1</a>
+                                <a href="/">submenu item #2</a>
+                                <a href="/">submenu item #3</a>
+                                <a href="/">submenu item #4</a>
+                            </div>
+                        </li>
+                        <li class="navigation__item"><a class="navigation__link" href="/">About</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="/">Services</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="/">Contact</a></li>
+                    </ul>
+                </nav>
+                <a class="cart" href="/" data-count="24">
+                    <svg class="cart__icon" width="22" height="21" aria-hidden="true">
+                        <use href="./assets/sprite.svg#cart" />
+                    </svg>
+                </a>
+                <button class="button" type="button">Order Today</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero hero--simple">
+        <section class="section">
+            <h2 class="page-section__title page-section__title--light page-section__title--center h3">About the Author
+            </h2>
+            <p class="paragraph paragraph--light paragraph--center">There are many variations of passages of Lorem
+                Ipsum available, have suffered alteration in some form.</p>
+        </section>
+    </div>
+    <div class="books-included">
+        <section class="section page-section page-section--vertical">
+            <h2 class="page-section__title h3">Author’s Book Includes</h2>
+            <div class="books">
+                <article class="book">
+                    <picture class="book__picture">
+                        <source srcset="./assets/atomic_ones_cover.webp" type="image/webp">
+                        <img src="./assets/atomic_ones_cover.png" alt="Book" class="hero-book__image">
+                    </picture>
+                    <div class="book__content">
+                        <h3 class="book__title h4">Atomic One’s</h3>
+                        <p class="paragraph">Many variations of passages of Lorem Ipsum willing araise
+                            alteration in some form.</p>
+                        <ul class="book__statistic statistic statistic--dark statistic--gap-sm">
+                            <li class="statistic__item">
+                                <strong class="statistic__title">Pages:</strong>
+                                <span class="statistic__value">586 pages</span>
+                            </li>
+                            <li class="statistic__item">
+                                <strong class="statistic__title">Length:</strong>
+                                <span class="statistic__value">10 hours</span>
+                            </li>
+                        </ul>
+                        <button class="button button--secondary" type="button">Order Today</button>
+                    </div>
+                </article>
+                <article class="book">
+                    <picture class="book__picture">
+                        <source srcset="./assets/the_dark_light_cover.webp" type="image/webp">
+                        <img src="./assets/the_dark_light_cover.png" alt="Book" class="hero-book__image">
+                    </picture>
+                    <div class="book__content">
+                        <h3 class="book__title h4">The Dark Light</h3>
+                        <p class="paragraph">There are many variations of passages of Lorem Ipsum available,
+                            but the majority.</p>
+                        <ul class="book__statistic statistic statistic--dark statistic--gap-sm">
+                            <li class="statistic__item">
+                                <strong class="statistic__title">Pages:</strong>
+                                <span class="statistic__value">586 pages</span>
+                            </li>
+                            <li class="statistic__item">
+                                <strong class="statistic__title">Length:</strong>
+                                <span class="statistic__value">10 hours</span>
+                            </li>
+                        </ul>
+                        <button class="button button--secondary" type="button">Order Today</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    <div class="trusted">
+        <section class="section page-section page-section--vertical">
+            <h2 class="page-section__title h3">Trusted by the Best</h2>
+            <ul class="trusted__list">
+                <li class="trusted__item">
+                    <img class="trusted__logo" src="./assets/amazen.svg" alt="Amazen Corp Logo">
+                    <h4 class="trusted__title h5">Amazen Corp</h4>
+                    <p class="paragraph">A long established fact that a who looking at its layout.</p>
+                </li>
+                <li class="trusted__item">
+                    <img class="trusted__logo" src="./assets/megan_books.svg" alt="Megan Books Logo">
+                    <h4 class="trusted__title h5">Megan Books</h4>
+                    <p class="paragraph">A long established fact that a who looking at its layout.</p>
+                </li>
+                <li class="trusted__item">
+                    <img class="trusted__logo" src="./assets/los_books.svg" alt="Los Books Logo">
+                    <h4 class="trusted__title h5">Los Books</h4>
+                    <p class="paragraph">A long established fact that a who looking at its layout.</p>
+                </li>
+                <li class="trusted__item">
+                    <img class="trusted__logo" src="./assets/urban_lib.svg" alt="Urban Lib Logo">
+                    <h4 class="trusted__title h5">Urban Lib</h4>
+                    <p class="paragraph">A long established fact that a who looking at its layout.</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="subscribe">
+        <section class="section page-section page-section--vertical">
+            <div class="subscribe__inner">
+                <h2 class="page-section__title page-section__title--alt h3">Read a free chapter</h2>
+                <p class="subscribe__paragraph paragraph paragraph--dark">Making this the first true value generator on
+                    the Internet. It of
+                    over 200 Latin words, combined with a handful.</p>
+                <form class="subscribe__form">
+                    <input class="subscribe__input input" type="email" placeholder="Enter your email address">
+                    <button class="button button--primary" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <section class="section">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <a href="/" class="logo">
+                        <svg class="logo__icon" width="25" height="28" aria-hidden="true">
+                            <use href="./assets/sprite.svg#logo" />
+                        </svg>
+                        <span class="logo__text">Pages</span>
+                    </a>
+                    <div class="socials socials--alt">
+                        <a href="/" class="socials__button">
+                            <svg width="10" height="19" aria-hidden="true">
+                                <use href="./assets/sprite.svg#facebook" />
+                            </svg>
+                        </a>
+                        <a href="/" class="socials__button">
+                            <svg width="16" height="19" aria-hidden="true">
+                                <use href="./assets/sprite.svg#twitter" />
+                            </svg>
+                        </a>
+                        <a href="/" class="socials__button">
+                            <svg width="14" height="19" aria-hidden="true">
+                                <use href="./assets/sprite.svg#linkedin" />
+                            </svg>
+                        </a>
+                        <a href="/" class="socials__button">
+                            <svg width="14" height="19" aria-hidden="true">
+                                <use href="./assets/sprite.svg#instagram" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title h5">Explore</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Home</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">About Us</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Services</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Appointments</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Blog</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title h5">Explore</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Start here</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Style guide</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">404 not found</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Password protected</a>
+                            </li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Licenses</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Changelog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title h5">Keep in Touch</h3>
+                        <ul class="contacts">
+                            <li class="contacts__item">
+                                <div class="contacts__title">Address:</div>
+                                <div class="contacts__value">24A Kingston St, Los Vegas<br>NC 28202, USA.</div>
+                            </li>
+                            <li class="contacts__item">
+                                <div class="contacts__title">Mail:</div>
+                                <div class="contacts__value"><a class="link link--light"
+                                        href="mailto:support@doctors.com">support@doctors.com</a></div>
+                            </li>
+                            <li class="contacts__item">
+                                <div class="contacts__title">Phone:</div>
+                                <div class="contacts__value"><a class="link link--light"
+                                        href="tel:(+22) 123 - 4567 - 900">(+22) 123 - 4567 -
+                                        900</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy paragraph paragraph--light">©️ Drafted by <a class="link link--white"
+                    href="mailto:support@doctors.com">Victorflow</a> - Powered by <a class="link link--white"
+                    href="/">Webflow</a></div>
+        </section>
+    </footer>
+</body>
+
+</html>
