@@ -9,6 +9,14 @@
         }
     }
 
+    &.author--story {
+        background-color: var(--color-white);
+    }
+
+    .story {
+        margin-top: var(--gap-32);
+    }
+
     .button {
         margin-top: var(--gap-32);
     }
