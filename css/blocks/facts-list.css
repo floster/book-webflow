@@ -1,0 +1,22 @@
+.facts-list {
+    padding: var(--gap-48) var(--gap-60);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-dark);
+}
+
+.facts-list__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-16);
+}
+
+.facts-list__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.facts-list__socials {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap-12);
+}

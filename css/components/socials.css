@@ -17,7 +17,8 @@
     }
 }
 
-.socials__button {
+.socials__button,
+.socials__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,5 +30,16 @@
 
     &:hover {
         background-color: var(--color-secondary);
+    }
+}
+
+.socials__link {
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+
+    &:hover {
+        color: var(--color-secondary);
+        background-color: transparent;
     }
 }

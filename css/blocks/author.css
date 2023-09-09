@@ -1,5 +1,21 @@
 .author {
     background-color: var(--color-light-alt);
+
+    &:has(.author__hero-picture) {
+        .page-section {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, min-content);
+            row-gap: var(--gap-80);
+        }
+    }
+
+    .button {
+        margin-top: var(--gap-32);
+    }
+}
+
+.author__hero-picture {
+    grid-column: span 2;
 }
 
 .author__picture,
