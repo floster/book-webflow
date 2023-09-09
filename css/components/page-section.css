@@ -10,6 +10,10 @@
     &.page-section--1_2 {
         grid-template-columns: 1fr 2fr;
     }
+
+    &.page-section--pt0 {
+        padding-top: 0;
+    }
 }
 
 .page-section--vertical {
