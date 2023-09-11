@@ -1,0 +1,39 @@
+.book {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-16);
+
+    .paragraph,
+    .statistic {
+        margin-bottom: var(--gap-24);
+    }
+}
+
+.book__image {
+    position: relative;
+    z-index: 1;
+    padding: var(--gap-48);
+    background-color: var(--color-light-alt);
+}
+
+.book__picture {
+    display: flex;
+}
+
+.book__icon {
+    position: absolute;
+    z-index: 1;
+    bottom: 14px;
+    right: 14px;
+}
+
+.book__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--gap-8);
+}
+
+.book__price {
+    font-size: var(--font-24);
+    color: var(--color-secondary);
+}
