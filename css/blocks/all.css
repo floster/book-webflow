@@ -1,6 +1,6 @@
 @import './articles.css';
 @import './author.css';
-@import './books.css';
+@import './books-included.css';
 @import './chapters.css';
 @import './footer-nav.css';
 @import './footer.css';
@@ -13,3 +13,4 @@
 @import './what-learn.css';
 @import './facts-list.css';
 @import './story.css';
+@import './books-grid.css';
