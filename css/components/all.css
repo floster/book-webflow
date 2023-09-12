@@ -8,10 +8,11 @@
 @import './statistic.css';
 @import './page-section.css';
 @import './book-included.css';
-@import './contact.css';
+@import './author-contact.css';
 @import './picture.css';
 @import './rating.css';
 @import './testimonial.css';
 @import './article.css';
-@import './contacts.css';
+@import './footer-contacts.css';
 @import './book.css';
+@import './icon-square.css';
