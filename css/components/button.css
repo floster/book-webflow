@@ -27,6 +27,10 @@
         padding: 0 var(--gap-96);
     }
 
+    &.button--block {
+        width: 100%;
+    }
+
     &.button--primary {
         color: var(--color-white);
         background-color: var(--color-primary);

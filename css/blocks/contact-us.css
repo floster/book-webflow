@@ -1,0 +1,15 @@
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-32);
+
+    .icon-square {
+        color: var(--color-secondary);
+    }
+}
+
+.contact-us__item {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap-24);
+}

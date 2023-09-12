@@ -107,6 +107,10 @@ p {
     color: var(--color-text-tint-light);
 }
 
+.link--grey {
+    color: var(--color-text-tint-dark);
+}
+
 .link--white {
     color: var(--color-white);
 }

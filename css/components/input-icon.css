@@ -1,0 +1,31 @@
+.input-icon {
+    display: flex;
+    position: relative;
+    z-index: 1;
+
+    .input,
+    .textarea {
+        border: 1px solid var(--color-light-dark);
+        height: 65px;
+        width: 100%;
+        padding-left: var(--gap-60);
+    }
+
+    .textarea {
+        height: auto;
+    }
+
+    &.input-icon--textarea {
+        .input-icon__icon {
+            top: 28px;
+        }
+    }
+}
+
+.input-icon__icon {
+    position: absolute;
+    left: var(--gap-24);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}

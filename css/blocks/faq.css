@@ -1,0 +1,37 @@
+.faq {
+    background-color: var(--color-light-alt);
+}
+
+.faq__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--gap-80);
+}
+
+details {
+    padding-top: var(--gap-16);
+    padding-bottom: var(--gap-16);
+
+    &:not(:last-child) {
+        border-bottom: 1px solid var(--color-light-dark);
+    }
+
+    .paragraph {
+        padding-left: var(--gap-24);
+    }
+}
+
+details[open] summary::marker {
+    content: '○\00a0\00a0';
+}
+
+summary {
+    font-size: 24px;
+    font-family: var(--font-serif);
+    cursor: pointer;
+
+    &::marker {
+        content: '●\00a0\00a0';
+        color: var(--color-secondary);
+    }
+}
