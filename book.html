@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,700;1,400&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Main - Book Webflow</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="section header__inner">
+            <a href="/" class="logo">
+                <svg class="logo__icon" width="25" height="28" aria-hidden="true">
+                    <use href="./assets/sprite.svg#logo" />
+                </svg>
+                <span class="logo__text">Pages</span>
+            </a>
+            <div class="socials">
+                <a href="/" class="socials__button">
+                    <svg width="10" height="19" aria-hidden="true">
+                        <use href="./assets/sprite.svg#facebook" />
+                    </svg>
+                </a>
+                <a href="/" class="socials__button">
+                    <svg width="16" height="19" aria-hidden="true">
+                        <use href="./assets/sprite.svg#twitter" />
+                    </svg>
+                </a>
+                <a href="/" class="socials__button">
+                    <svg width="14" height="19" aria-hidden="true">
+                        <use href="./assets/sprite.svg#linkedin" />
+                    </svg>
+                </a>
+            </div>
+            <div class="header__navigation">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link" href="/">Home</a></li>
+                        <li class="navigation__item has-submenu">
+                            <a class="navigation__link" href="/">
+                                Pages
+                                <svg class="navigation__icon" width="16" height="16" aria-hidden="true">
+                                    <use class="navigation__link" href="./assets/sprite.svg#chevron-down" />
+                                </svg>
+                            </a>
+                            <div class="navigation__submenu">
+                                <a href="/">submenu item #1</a>
+                                <a href="/">submenu item #2</a>
+                                <a href="/">submenu item #3</a>
+                                <a href="/">submenu item #4</a>
+                            </div>
+                        </li>
+                        <li class="navigation__item"><a class="navigation__link" href="/">About</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="/">Services</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="/">Contact</a></li>
+                    </ul>
+                </nav>
+                <a class="cart" href="/" data-count="24">
+                    <svg class="cart__icon" width="22" height="21" aria-hidden="true">
+                        <use href="./assets/sprite.svg#cart" />
+                    </svg>
+                </a>
+                <button class="button" type="button">Order Today</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero hero--simple">
+        <section class="section">
+            <h2 class="page-section__title page-section__title--light page-section__title--center h3">My Store</h2>
+            <p class="paragraph paragraph--light paragraph--center">There are many variations of passages of Lorem
+                Ipsum available, have suffered alteration in some form.</p>
+        </section>
+    </div>
+    <section class="section the-book">
+        <article class="book book--alt">
+            <div class="book__image">
+                <picture class="book__picture">
+                    <source srcset="./assets/the_dark_light_cover_lg.webp" type="image/webp">
+                    <img src="./assets/the_dark_light_cover_lg.png" alt="Book">
+                </picture>
+            </div>
+            <div class="book__content">
+                <header class="book__header">
+                    <h3 class="book__title h4">Atomic One’s</h3>
+                    <span class="book__price">$23.89</span>
+                </header>
+                <p class="paragraph">Making this the first true generator on the Internet. It uses a dictionary of over
+                    200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
+                    looks reasonable. The generated Lorem Ipsum.</p>
+                <ul class="book__info">
+                    <li class="book__info-item">
+                        <span class="book__info-title">Publisher</span>
+                        <span class="book__info-value">Learning Private Limited (1 January 2021)</span>
+                    </li>
+                    <li class="book__info-item">
+                        <span class="book__info-title">Language</span>
+                        <span class="book__info-value">English</span>
+                    </li>
+                    <li class="book__info-item">
+                        <span class="book__info-title">Paperback</span>
+                        <span class="book__info-value">212 pages</span>
+                    </li>
+                    <li class="book__info-item">
+                        <span class="book__info-title">ISBN</span>
+                        <span class="book__info-value">9788120345799</span>
+                    </li>
+                    <li class="book__info-item">
+                        <span class="book__info-title">Dimensions</span>
+                        <span class="book__info-value">20 x 14 x 4 cm</span>
+                    </li>
+                </ul>
+                <form action="" class="book__form">
+                    <input type="text" class="input input--alt input--lg" value="1">
+                    <button class="button button--lg" type="button">
+                        <svg width="20" height="20" aria-hidden="true">
+                            <use href="./assets/sprite.svg#cart" />
+                        </svg>
+                        Add to Cart
+                    </button>
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <section class="section tabs">
+        <div class="tabs__tabs">
+            <button class="button button--light is-active tabs__tab" id="tab_1">Product Description</button>
+            <button class="button button--light tabs__tab" id="tab_2">Additional Info</button>
+        </div>
+        <div class="tabs__contents">
+            <div class="tabs__content is-active" data-tab="tab_1">
+                <article>
+                    <h3 class="h4">Do you offer discounts for education?</h3>
+                    <p class="paragraph">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, bypassed injected humour, or randomised
+                        words
+                        which don't look even slightly believable.</p>
+                </article>
+                <article>
+                    <h3 class="h4">Is this book for me?</h3>
+                    <p class="paragraph">If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                        isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on
+                        the Internet tend to repeat predefined chunks as necessary.</p>
+                </article>
+            </div>
+            <div class="tabs__content" data-tab="tab_2">tab 2 content</div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="section features__grid">
+            <div class="features__feature">
+                <div class="features__icon">
+                    <svg width="38" height="38" aria-hidden="true">
+                        <use href="./assets/sprite.svg#secure" />
+                    </svg>
+                </div>
+                <h3 class="h5 features__title">Secure Payments</h3>
+                <p class="paragraph features__description">There are many variations of passages of alteration in some
+                    form.
+                </p>
+            </div>
+            <div class="features__feature">
+                <div class="features__icon">
+                    <svg width="38" height="38" aria-hidden="true">
+                        <use href="./assets/sprite.svg#shipping" />
+                    </svg>
+                </div>
+                <h3 class="h5 features__title">Free Shipping</h3>
+                <p class="paragraph features__description">There are many variations of passages of alteration in some
+                    form.
+                </p>
+            </div>
+            <div class="features__feature">
+                <div class="features__icon">
+                    <svg width="38" height="38" aria-hidden="true">
+                        <use href="./assets/sprite.svg#satisfaction" />
+                    </svg>
+                </div>
+                <h3 class="h5 features__title">100% Satisfactions</h3>
+                <p class="paragraph features__description">There are many variations of passages of alteration in some
+                    form.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section class="section">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <a href="/" class="logo">
+                        <svg class="logo__icon" width="25" height="28" aria-hidden="true">
+                            <use href="./assets/sprite.svg#logo" />
+                        </svg>
+                        <span class="logo__text">Pages</span>
+                    </a>
+                    <div class="socials socials--alt">
+                        <a href="/" class="socials__button">
+                            <svg width="10" height="19" aria-hidden="true">
+                                <use href="./assets/sprite.svg#facebook" />
+                            </svg>
+                        </a>
+                        <a href="/" class="socials__button">
+                            <svg width="16" height="19" aria-hidden="true">
+                                <use href="./assets/sprite.svg#twitter" />
+                            </svg>
+                        </a>
+                        <a href="/" class="socials__button">
+                            <svg width="14" height="19" aria-hidden="true">
+                                <use href="./assets/sprite.svg#linkedin" />
+                            </svg>
+                        </a>
+                        <a href="/" class="socials__button">
+                            <svg width="14" height="19" aria-hidden="true">
+                                <use href="./assets/sprite.svg#instagram" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title h5">Explore</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Home</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">About Us</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Services</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Appointments</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Blog</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title h5">Explore</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Start here</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Style guide</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">404 not found</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Password protected</a>
+                            </li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Licenses</a></li>
+                            <li class="footer-nav__item"><a class="link link--light" href="/">Changelog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title h5">Keep in Touch</h3>
+                        <ul class="contacts">
+                            <li class="contacts__item">
+                                <div class="contacts__title">Address:</div>
+                                <div class="contacts__value">24A Kingston St, Los Vegas<br>NC 28202, USA.</div>
+                            </li>
+                            <li class="contacts__item">
+                                <div class="contacts__title">Mail:</div>
+                                <div class="contacts__value"><a class="link link--light"
+                                        href="mailto:support@doctors.com">support@doctors.com</a></div>
+                            </li>
+                            <li class="contacts__item">
+                                <div class="contacts__title">Phone:</div>
+                                <div class="contacts__value"><a class="link link--light"
+                                        href="tel:(+22) 123 - 4567 - 900">(+22) 123 - 4567 -
+                                        900</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy paragraph paragraph--light">©️ Drafted by <a class="link link--white"
+                    href="mailto:support@doctors.com">Victorflow</a> - Powered by <a class="link link--white"
+                    href="/">Webflow</a></div>
+        </section>
+    </footer>
+
+    <script>
+        const handleTabs = () => {
+            // Get all the tabs and contents
+            const tabs = document.querySelectorAll('.tabs__tab');
+            const contents = document.querySelectorAll('.tabs__content');
+
+            // Define a function to handle the click event
+            const handleClick = (tab, content) => {
+                // Get the currently active tab and content
+                const activeTab = document.querySelector('.tabs__tab.is-active');
+                const activeContent = document.querySelector('.tabs__content.is-active');
+
+                // Remove the "is-active" class from the currently active tab and content
+                activeTab.classList.remove('is-active');
+                activeContent.classList.remove('is-active');
+
+                // Add the "is-active" class to the clicked tab and content
+                tab.classList.add('is-active');
+                content.classList.add('is-active');
+            };
+
+            // Add a click event listener to each tab
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Get the ID of the clicked tab and the corresponding content
+                    const tabId = tab.id;
+                    const content = document.querySelector(`[data-tab="${tabId}"]`);
+
+                    // Call the handleClick function with the clicked tab and content
+                    handleClick(tab, content);
+                });
+            });
+        };
+
+        handleTabs();
+    </script>
+</body>
+
+</html>

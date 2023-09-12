@@ -1,3 +1,8 @@
+.the-book {
+    padding-top: var(--gap-144);
+    padding-bottom: var(--gap-144);
+}
+
 .book {
     display: flex;
     flex-direction: column;
@@ -6,6 +11,24 @@
     .paragraph,
     .statistic {
         margin-bottom: var(--gap-24);
+    }
+
+    &.book--alt {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 580px 1fr;
+        column-gap: var(--gap-80);
+
+        .book__image {
+            background-color: var(--color-light-alt);
+            padding: var(--gap-80) var(--gap-96);
+        }
+
+        .book__header {
+            flex-direction: column;
+            column-gap: var(--gap-8);
+            margin-bottom: var(--gap-24);
+        }
     }
 }
 
@@ -36,4 +59,43 @@
 .book__price {
     font-size: var(--font-24);
     color: var(--color-secondary);
+}
+
+.book__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-16);
+    color: var(--color-text-tint-dark);
+}
+
+.book__info-item {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap-24);
+}
+
+.book__info-title {
+    position: relative;
+    z-index: 1;
+    flex-basis: 130px;
+    flex-shrink: 0;
+
+    &::after {
+        content: ':';
+        position: absolute;
+        z-index: 1;
+        right: 0;
+    }
+}
+
+.book__form {
+    display: flex;
+    column-gap: var(--gap-12);
+    margin-top: var(--gap-32);
+
+    .input {
+        max-width: 120px;
+        padding: 0;
+        text-align: center;
+    }
 }

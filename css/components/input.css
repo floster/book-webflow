@@ -10,6 +10,10 @@
     }
 
     &.input--lg {
-        height: 65px;
+        height: 63px;
+    }
+
+    &.input--alt {
+        border-color: var(--color-secondary);
     }
 }
