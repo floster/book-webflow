@@ -11,6 +11,26 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+
+    &.list.list--yellow {
+        padding-left: var(--gap-24);
+        margin-block-start: var(--gap-16);
+        margin-block-end: var(--gap-16);
+
+        & li {
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: '';
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: var(--color-secondary);
+                margin-right: var(--gap-16);
+            }
+        }
+    }
 }
 
 picture {
@@ -20,4 +40,29 @@ picture {
 img {
     width: 100%;
     height: auto;
+}
+
+blockquote {
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: var(--gap-48);
+    margin: var(--gap-48) 0;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: var(--color-secondary);
+
+        clip-path: path('M 25 0 l 0, 50 l 25, -25 l 0, -25 Z m 40, 0 l 0, 50 l 25, -25 l 0, -25 Z');
+    }
 }

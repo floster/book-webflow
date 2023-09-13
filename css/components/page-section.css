@@ -37,7 +37,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: var(--gap-24);
-    margin-bottom: var(--gap-24);
+    margin: 0 auto var(--gap-24);
+    max-width: 50%;
 
     &::after {
         content: '';

@@ -1,0 +1,17 @@
+.post {
+    padding-top: var(--gap-144);
+    padding-bottom: var(--gap-144);
+}
+
+.post__details {
+    margin-top: var(--gap-16);
+    margin-bottom: var(--gap-24);
+}
+
+.post__section {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-16);
+    margin-top: var(--gap-48);
+    margin-bottom: var(--gap-48);
+}
