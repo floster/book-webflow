@@ -22,4 +22,12 @@
     padding-right: var(--gap-16);
     margin-left: auto;
     margin-right: auto;
+
+    &.section--narrow {
+        width: 30%;
+
+        .page-section__title {
+            max-width: 100%;
+        }
+    }
 }

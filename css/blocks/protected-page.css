@@ -1,0 +1,11 @@
+.protected-page {
+    background-color: var(--color-light);
+    margin-top: var(--gap-144);
+    margin-bottom: var(--gap-144);
+    padding: var(--gap-120) var(--gap-144);
+
+    .paragraph {
+        margin-top: var(--gap-24);
+        margin-bottom: var(--gap-24);
+    }
+}

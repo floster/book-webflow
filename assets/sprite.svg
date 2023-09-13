@@ -35,6 +35,9 @@
 <symbol id="form-user" fill="none" viewBox="0 0 24 24">
     <path stroke="#FFCA42" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/>
 </symbol>
+<symbol id="form-key" fill="none" viewBox="0 0 26 26">
+    <path d="m16.791 8.125 3.792-3.792m2.167-2.167-2.167 2.167 2.167-2.167ZM12.339 12.578a5.96 5.96 0 0 1 .028 8.455 5.958 5.958 0 0 1-8.454-.029 5.958 5.958 0 0 1 8.425-8.425h.001Zm0 0 4.452-4.452-4.452 4.452Zm4.452-4.452 3.25 3.25 3.792-3.792-3.25-3.25-3.791 3.792Z" stroke="#FFCA42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 
 <symbol id="cart" fill="none" viewBox="0 0 24 24">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1.75h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6.75H6m4 15a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm11 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
