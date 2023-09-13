@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,700;1,400&family=Inter:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Main - Book Webflow</title>
@@ -66,11 +66,11 @@
                         <li class="navigation__item"><a class="navigation__link" href="/">Contact</a></li>
                     </ul>
                 </nav>
-                <a class="cart" href="/" data-count="24">
+                <button class="cart" data-count="24">
                     <svg class="cart__icon" width="22" height="21" aria-hidden="true">
                         <use href="./assets/sprite.svg#cart" />
                     </svg>
-                </a>
+                </button>
                 <button class="button" type="button">Order Today</button>
             </div>
         </div>
@@ -593,6 +593,58 @@
                     href="/">Webflow</a></div>
         </section>
     </footer>
+
+    <dialog class="dialog">
+        <header class="dialog__header">
+            <h1 class="h3">Your Cart</h1>
+            <button class="dialog__close">✕</button>
+        </header>
+        <div class="dialog__content">
+            <article class="cart-item">
+                <picture class="cart-item__picture">
+                    <source srcset="./assets/the_dark_light_cover.webp" type="image/webp">
+                    <img src="./assets/the_dark_light_cover.png" alt="Book" class="cart-item__image">
+                </picture>
+                <div class="cart-item__content">
+                    <h3 class="cart-item__title h5">The Dark Light</h3>
+                    <div class="cart-item__price">$ 24.99</div>
+                    <button class="button button--transparent h5">Remove</button>
+                </div>
+                <input class="input input--light input--block" type="text" value="1" class="input">
+            </article>
+        </div>
+        <footer class="dialog__footer">
+            <div class="dialog__total">
+                <span class="h5">Sub-Total:</span>
+                <strong>$ 24.99</strong>
+            </div>
+            <button class="button button--primary button--block" type="button">Continue to Checkout</button>
+        </footer>
+    </dialog>
+
+    <script>
+        const handleDialog = () => {
+            const cart = document.querySelector('.cart');
+            const dialog = document.querySelector('.dialog');
+            const dialogClose = document.querySelector('.dialog__close');
+
+            cart.addEventListener('click', () => {
+                dialog.showModal();
+            });
+
+            dialogClose.addEventListener('click', () => {
+                dialog.close();
+            });
+
+            dialog.addEventListener('click', (e) => {
+                if (e.target === dialog) {
+                    dialog.close();
+                }
+            })
+        }
+
+        handleDialog();
+    </script>
 </body>
 
 </html>

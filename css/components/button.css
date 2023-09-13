@@ -60,6 +60,18 @@
         }
     }
 
+    &.button--transparent {
+        color: var(--color-primary);
+        background-color: transparent;
+        border-color: transparent;
+        height: fit-content;
+        padding: 0;
+
+        &:hover {
+            color: var(--color-secondary);
+        }
+    }
+
     &.button--link {
         padding: var(--gap-4);
         width: fit-content;
